@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Travel Booking</title>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Explore The World</h1>
+
+</header>
+
+<div class="container">
+
+<h2>Travel Registration</h2>
+
+<form action="/register" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+name="phone"
+placeholder="Phone Number"
+required>
+
+<button type="submit">
+Register
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
